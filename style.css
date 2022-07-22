@@ -1,6 +1,140 @@
 *{
     margin: 0;
+    padding: 0;
+    /* color: white; */
 }
+
+@font-face {
+    font-family: 'condensed';
+    src: url(Fonts/Helvetica\ Condensed\ Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-light';
+    src: url(Fonts/Roboto-Light_0.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(Fonts/Roboto-Regular_0.ttf);
+}
+
+body{
+    background-image: url(imagens/index-image.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-width: 600px;
+}
+
+main{
+    margin: auto;
+    max-width: 1080px;
+    min-width: 600px;
+    max-height: 527px;
+    color: white;
+}
+
+main h1{
+    font-size: 60px;
+}
+
+main h2{
+    font-family: 20px;
+}
+
 .logo{
     max-width: 170px;
+}
+
+.cadastro-container{
+    background-color: #29abe2;
+    min-height: 400px;
+}
+
+.lista-container{
+    background-color: white;
+    color: #29abe2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.lista-container h1{
+    padding: 30px 0 50px 0;
+    font-family: '';
+    font-size: 2.5em;
+}
+
+.tabela-container{
+    display: flex;
+}
+
+.tabela{
+    padding-bottom: 50px;
+}
+
+table, td, th{
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th{
+    color: #012d51;
+    padding: 15px;
+    font-family: 'Roboto-regular';
+}
+
+td {
+    color:#808080;
+}
+
+td, th{
+    border-top: 1px solid #29aae2;
+    border-right: 1px solid #29abe2;
+    width: 150px;
+}
+
+td{
+    text-align: center;
+    font-family: 'condensed';
+}
+
+.numeros{
+    font-family: 'Roboto-light';
+    color: #012d51;
+    width: 70px;
+}
+
+.sem-borda{
+    border-top: none;
+}
+
+.telefone{
+    border-right: none;
+}
+
+.topo-icon{
+    width: 50px;
+}
+
+.topo-icon:hover{
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+    background-image: url(imagens/rodape-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto-light';
+    font-size: .75em;
+}
+
+footer p{
+    padding: 8px;
+    color: white;
 }

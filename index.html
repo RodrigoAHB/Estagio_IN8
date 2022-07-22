@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +12,9 @@
         <img src="imagens/logo-in8-dev.svg" alt="Logo" class="logo">
         <nav>
             <ul>
-                <li>cadastro</li>
-                <li>lista</li>
-                <li>sobre mim</li>
+                <li><a href="#">cadastro</a></li>
+                <li><a href="#">lista</a></li>
+                <li><a href="#">sobre mim</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +25,7 @@
     <section class="cadastro-container">
         <form action="" class="cadastro">
             <h1>Cadastro</h1>
-            <label for="name">Nome</label>
+            <label for="name" class="name">Nome</label>
             <input type="text" name="name" id="name">
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email">
@@ -38,21 +38,52 @@
     </section>
     <section class="lista-container">
         <h1>LISTA DE CADASTRO</h1>
-        <table>
-            <tr>
-                <th> </th>
-                <th>NOME</th>
-                <th>E-MAIL</th>
-                <th>NASCIMENTO</th>
-                <th>TELEFONE</th>
-            </tr>
-        </table>
+        <div class="tabela-container">
+            <table class="tabela">
+                <tr>
+                    <th class="sem-borda numeros"></th>
+                    <th class="sem-borda">NOME</th>
+                    <th class="sem-borda">E-MAIL</th>
+                    <th class="sem-borda">NASCIMENTO</th>
+                    <th class="telefone sem-borda">TELEFONE</th>
+                </tr>
+                <tr>
+                    <td class="numeros">1</td>
+                    <td>Rodrigo Albano Hofer Bastos</td>
+                    <td>digoalbano1010@gmail.com</td>
+                    <td>06/12/1996</td>
+                    <td class="telefone">(31) 9 9962-4675</td>
+                </tr>
+                <tr>
+                    <td class="numeros">2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="telefone"></td>
+                </tr>
+                <tr>
+                    <td class="numeros">3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="telefone"></td>
+                </tr>
+                <tr>
+                    <td class="numeros">4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="telefone"></td>
+                </tr>
+            </table>
+            <img src="icones/topo-pag.svg" alt="topo" class="topo-icon">
+        </div>
     </section>
     <footer class="footer-container">
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>Rodrigo Albano Hofer Bastos</p>
+        <p>digoalbano1010@gmail.com</p>
+        <p>(31) 9 9962-4675</p>
+        <p>Faculdade IFMG Sabará</p>
     </footer>
     <script src="app.js"></script>
 </body>
