@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+
 @font-face {
     font-family: Helvetica-condensed;
     src: url(Fonts/Helvetica\ Condensed\ Regular.ttf);
@@ -30,21 +35,22 @@
     background-size: auto;
     background-position: center;
     height: 97vh;
+    width: 100%;
 }
 
 header nav ul li{
     list-style: disc;
     color: white;
-    padding-right: 20px;
-    font-size: 25px;
+    padding-right: 2rem;
+    font-size: 2.5rem;
 }
 
 header nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 19px;
+    font-size: 1.9rem;
     font-family: 'Roboto-regular';
-    margin-right: 15px;
+    margin-right: 1.5rem;
     letter-spacing: 1px;
 }
 
@@ -62,13 +68,13 @@ header nav ul li a:hover{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 980px;
+    max-width: 1000px;
     margin: auto;
     padding: 50px 0 50px 0;
 }
 
 .logo{
-    width: 170px;
+    width: 17rem;
 }
 
 .logo:hover{
@@ -82,7 +88,7 @@ header nav ul{
 main{
     margin: auto;
     width: 100%;
-    max-width: 980px;
+    max-width: 1000px;
     max-height: 527px;
     color: white;
     font-family: 'minhaFonte';
@@ -90,7 +96,7 @@ main{
 }
 
 main h1{
-    font-size: 120px;
+    font-size: 12rem;
     font-weight: 25;
     padding-bottom: 15px;
 }
@@ -109,7 +115,7 @@ main h2{
     font-family: 'minhaFonte';
     text-align: center;
     padding: 80px;
-    font-size: 50px;
+    font-size: 5rem;
     color: white;
     font-weight: 25;
     letter-spacing: 1px;
@@ -117,10 +123,10 @@ main h2{
 
 .cadastro{
     font-family: 'Roboto-regular';
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
     display: grid;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: white;
 }
 
@@ -134,7 +140,7 @@ main h2{
     background-color: #29aae2;
     margin-bottom: 10px;
     color: white;
-    font-size: 16px;
+    font-size: 1.6rem;
     padding-bottom: 3px;
 }
 
@@ -145,15 +151,15 @@ main h2{
 .cadastrar-btn{
     text-align: center;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 70px;
     font-family: 'minhaFonte';
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 25;
     color: #29aae2;
     background-color: #012d51;
     border: none;
-    padding: 10px; 
-    width: 65%;
+    padding: 15px 0; 
+    width: 60%;
 }
 
 .lista-container{
@@ -168,13 +174,14 @@ main h2{
 
 .lista-container h1{
     padding: 30px 0 50px 0;
-    font-size: 2.5em;
+    font-size: 5rem;
     font-family: 'minhaFonte';
     font-weight: 25;
 }
 
 .tabela-container{
     display: flex;
+    font-size: 1.8rem;
 }
 
 .tabela{
@@ -224,7 +231,10 @@ td{
 }
 
 .topo-icon{
-    width: 50px;
+    width: 5rem ;
+    position: fixed;
+    right: 100px;
+    bottom: 75px;
 }
 
 .topo-icon:hover{
@@ -239,7 +249,7 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Roboto-light';
-    font-size: 20px;
+    font-size: 2rem;
     height: 25vh;
     padding-top: 50px;
 }
@@ -247,4 +257,23 @@ footer{
 footer p{
     padding: 10px;
     color: white;
+}
+
+@media (max-width: 1355px){
+    .topo-icon{
+        right: 50px;
+    }
+}
+
+@media (max-width: 1100px){
+    .topo-icon{
+        width: 3rem;
+        right: 20px;
+    }
+}
+
+@media (max-width: 1000px){
+    .topo-icon{
+        display: none;
+    }
 }

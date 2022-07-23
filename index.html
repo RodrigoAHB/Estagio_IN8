@@ -13,15 +13,15 @@
     <div class="background">
         <header class="header-container">
             <div class="container">
-                <img src="imagens/nj.png" alt="Logo" class="logo">
+                <a name="home"><img src="imagens/nj.png" alt="Logo" class="logo"></a>
                 <div class="menu-section">
                     <div class="menu-toggle">
                     </div>
                     <nav>
                         <ul>
-                            <li class="dot"><a href="#">cadastro</a></li>
-                            <li><a href="#">lista</a></li>
-                            <li><a href="#">sobre mim</a></li>
+                            <li class="dot"><a href="#cadastro">cadastro</a></li>
+                            <li><a href="#lista">lista</a></li>
+                            <li><a href="#sobre-mim">sobre mim</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -33,7 +33,9 @@
         </main>
     </div>
     <section class="cadastro-container">
-        <h1>CADASTRO</h1>
+        <a name="cadastro">
+            <h1>CADASTRO</h1>
+        </a>
         <form action="" class="cadastro">
             <label for="name" class="name">Nome</label>
             <input type="text" name="name" id="name" class="input">
@@ -47,7 +49,9 @@
         </form>
     </section>
     <section class="lista-container">
-        <h1>LISTA DE CADASTRO</h1>
+        <a name="lista">
+            <h1>LISTA DE CADASTRO</h1>
+        </a>
         <div class="tabela-container">
             <table class="tabela">
                 <tr>
@@ -86,11 +90,13 @@
                     <td class="telefone"></td>
                 </tr>
             </table>
-            <img src="icones/topo-pag.svg" alt="topo" class="topo-icon">
         </div>
     </section>
+        <a href="#home"><img src="icones/topo-pag.svg" alt="topo" class="topo-icon"></a>
     <footer class="footer-container">
-        <p>Rodrigo Albano Hofer Bastos</p>
+        <a name="sobre-mim">
+            <p>Rodrigo Albano Hofer Bastos</p>
+        </a>
         <p>digoalbano1010@gmail.com</p>
         <p>(31) 9 9962-4675</p>
         <p>Faculdade IFMG Sabará</p>
