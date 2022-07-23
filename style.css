@@ -29,10 +29,14 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+    height: 97vh;
 }
 
 header nav ul li{
-    list-style: none;
+    list-style: disc;
+    color: white;
+    padding-right: 20px;
+    font-size: 25px;
 }
 
 header nav ul li a{
@@ -40,8 +44,12 @@ header nav ul li a{
     color: white;
     font-size: 19px;
     font-family: 'Roboto-regular';
-    padding-right: 15px;
+    margin-right: 15px;
     letter-spacing: 1px;
+}
+
+.dot{
+    list-style: none;
 }
 
 header nav ul li a:hover{
@@ -58,8 +66,13 @@ header nav ul li a:hover{
     margin: auto;
     padding: 50px 0 50px 0;
 }
+
 .logo{
     width: 170px;
+}
+
+.logo:hover{
+    cursor: pointer;
 }
 
 header nav ul{
@@ -87,11 +100,60 @@ main h2{
     font-weight: 25;
 }
 
-
-
 .cadastro-container{
     background-color: #29abe2;
-    min-height: 400px;
+    height: 72vh;
+}
+
+.cadastro-container h1{
+    font-family: 'minhaFonte';
+    text-align: center;
+    padding: 80px;
+    font-size: 50px;
+    color: white;
+    font-weight: 25;
+    letter-spacing: 1px;
+}
+
+.cadastro{
+    font-family: 'Roboto-regular';
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    font-size: 14px;
+    color: white;
+}
+
+.cadastro label{
+    padding-bottom: 10px;
+}
+
+.input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #29aae2;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.cadastrar-btn{
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    font-family: 'minhaFonte';
+    font-size: 50px;
+    font-weight: 25;
+    color: #29aae2;
+    background-color: #012d51;
+    border: none;
+    padding: 10px; 
+    width: 65%;
 }
 
 .lista-container{
@@ -101,6 +163,7 @@ main h2{
     align-items: center;
     justify-content: center;
     padding-bottom: 100px;
+    height: 40vh;
 }
 
 .lista-container h1{
@@ -170,15 +233,18 @@ td{
 
 footer{
     text-align: center;
-    padding: 40px;
+    margin: auto;
     background-image: url(imagens/rodape-desktop.jpg);
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Roboto-light';
-    font-size: .75em;
+    font-size: 20px;
+    height: 25vh;
+    padding-top: 50px;
 }
 
 footer p{
-    padding: 8px;
+    padding: 10px;
     color: white;
 }

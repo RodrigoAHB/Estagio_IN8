@@ -17,7 +17,7 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">cadastro</a></li>
+                            <li class="dot"><a href="#">cadastro</a></li>
                             <li><a href="#">lista</a></li>
                             <li><a href="#">sobre mim</a></li>
                         </ul>
@@ -31,17 +31,17 @@
         </main>
     </div>
     <section class="cadastro-container">
+        <h1>CADASTRO</h1>
         <form action="" class="cadastro">
-            <h1>Cadastro</h1>
             <label for="name" class="name">Nome</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" class="input">
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" class="input">
             <label for="birthdate">Nascimento</label>
-            <input type="date" name="birthdate" id="birthdate">
+            <input type="date" name="birthdate" id="birthdate" class="input" max="2022-07-26">
             <label for="phone">Telefone</label>
-            <input type="tel" name="phone" id="phone">
-            <input type="submit" value="CADASTRAR">
+            <input type="tel" name="phone" id="phone" class="input" placeholder="Telefone com DDD" maxlength="12" OnKeyPress="formatar('##-####-####', this)">
+            <input type="submit" value="CADASTRAR" class="cadastrar-btn">
         </form>
     </section>
     <section class="lista-container">
@@ -93,6 +93,7 @@
         <p>(31) 9 9962-4675</p>
         <p>Faculdade IFMG Sabará</p>
     </footer>
+    
     <script src="app.js"></script>
 </body>
 </html>
