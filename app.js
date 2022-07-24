@@ -13,24 +13,20 @@ let tabela = document.getElementById('tableBody')
 let logo = document.getElementById('logo')
 
 
-// data
-registerBirth.value
-
 // Event Listeners
 register.addEventListener('click', submit)
 logo.addEventListener('click', home)
 
 
-
 // Functions
-function home(){
-	
-}
-
 function submit(){
 	event.preventDefault();
-	createTable()
-	clearCadastro()
+	if(registerBirth.value == '' || registerEmail.value == '' || registerName.value == '' || registerPhone.value == ''){
+		alert('Alguma informaão está faltando, preencha o formulário novamente')
+	} else {
+		createTable()
+		clearCadastro()
+	}
 }
 
 function clearCadastro(){
@@ -41,6 +37,8 @@ function clearCadastro(){
 }
 
 function createTable(){
+	const [year, month, day] = registerBirth.value.split('-')	
+	const formattedDate = `${day}/${month}/${year}`
 	row+=1;
 	let td;
 	let newTr = document.createElement('tr')
@@ -54,7 +52,7 @@ function createTable(){
 		} else if(i==3){
 			td.innerText = registerEmail.value
 		} else if(i==4){
-			td.innerText = registerBirth.value
+			td.innerText = formattedDate
 		} else if(i==5){
 			td.className = 'telefone'
 			td.innerText = registerPhone.value
