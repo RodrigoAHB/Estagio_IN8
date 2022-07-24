@@ -10,9 +10,22 @@ let registerEmail = document.getElementById('email')
 let registerBirth =	document.getElementById('birthdate')
 let registerPhone = document.getElementById('phone')
 let tabela = document.getElementById('tableBody')
+let logo = document.getElementById('logo')
 
 
+// data
+registerBirth.value
+
+// Event Listeners
 register.addEventListener('click', submit)
+logo.addEventListener('click', home)
+
+
+
+// Functions
+function home(){
+	
+}
 
 function submit(){
 	event.preventDefault();
@@ -29,55 +42,25 @@ function clearCadastro(){
 
 function createTable(){
 	row+=1;
+	let td;
 	let newTr = document.createElement('tr')
-	let td1 = document.createElement('td')
-	let td2 = document.createElement('td')
-	let td3 = document.createElement('td')
-	let td4 = document.createElement('td')
-	let td5 = document.createElement('td')
-	td1.className = 'numeros'
-	td5.className = 'telefone'
-	newTr.appendChild(td1)
-	newTr.appendChild(td2)
-	newTr.appendChild(td3)
-	newTr.appendChild(td4)
-	newTr.appendChild(td5)
+	for(i=1; i<=5; i++){
+		td = document.createElement('td')
+		if(i==1){
+			td.className = 'numeros'
+			td.innerText = row
+		} else if(i==2){
+			td.innerText = registerName.value
+		} else if(i==3){
+			td.innerText = registerEmail.value
+		} else if(i==4){
+			td.innerText = registerBirth.value
+		} else if(i==5){
+			td.className = 'telefone'
+			td.innerText = registerPhone.value
+		}
+		newTr.appendChild(td)
+	}
 	tabela.appendChild(newTr)
-	addTableValue(td1, td2, td3, td4, td5)
-	console.log(tabela)
 }
 
-function addTableValue(td1, td2, td3, td4, td5){
-	td1.innerText = row
-	td2.innerText = registerName.value
-	td3.innerText = registerEmail.value
-	td4.innerText = registerBirth.value
-	td5.innerText = registerPhone.value
-}
-
-
-
-
-
-
-
-
-// function createTable(){
-// 	row+=1;
-// 	let newTr = document.createElement('tr')
-// 	let td1 = document.createElement('td')
-// 	let td2 = document.createElement('td')
-// 	let td3 = document.createElement('td')
-// 	let td4 = document.createElement('td')
-// 	let td5 = document.createElement('td')
-// 	td1.className = 'numeros'
-// 	td5.className = 'telefone'
-// 	newTr.appendChild(td1)
-// 	newTr.appendChild(td2)
-// 	newTr.appendChild(td3)
-// 	newTr.appendChild(td4)
-// 	newTr.appendChild(td5)
-// 	tabela.appendChild(newTr)
-// 	addTableValue(td1, td2, td3, td4, td5)
-// 	console.log(tabela)
-// }
