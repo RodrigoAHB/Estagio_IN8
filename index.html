@@ -10,10 +10,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
 <body>
-    <div class="background">
+    <a name="home">
+        <div class="background">
+    </a>
         <header class="header-container">
             <div class="container">
-                <a name="home"><img src="imagens/nj.png" alt="Logo" class="logo"></a>
+                <img src="imagens/nj.png" alt="Logo" class="logo">
                 <div class="menu-section">
                     <div class="menu-toggle">
                     </div>
@@ -42,10 +44,10 @@
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" class="input">
             <label for="birthdate">Nascimento</label>
-            <input type="date" name="birthdate" id="birthdate" class="input" max="2022-07-26">
+            <input type="date" name="birthdate" id="birthdate" class="input">
             <label for="phone">Telefone</label>
             <input type="tel" name="phone" id="phone" class="input" placeholder="Telefone com DDD" maxlength="12">
-            <input type="submit" value="CADASTRAR" class="cadastrar-btn">
+            <input type="submit" value="CADASTRAR" class="cadastrar-btn" id="cadastrar-btn">
         </form>
     </section>
     <section class="lista-container">
@@ -53,42 +55,23 @@
             <h1>LISTA DE CADASTRO</h1>
         </a>
         <div class="tabela-container">
-            <table class="tabela">
-                <tr>
+            <table class="tabela" id="tabela">
+                <thead>
                     <th class="sem-borda numeros"></th>
                     <th class="sem-borda">NOME</th>
                     <th class="sem-borda">E-MAIL</th>
                     <th class="sem-borda">NASCIMENTO</th>
                     <th class="telefone sem-borda">TELEFONE</th>
-                </tr>
-                <tr>
-                    <td class="numeros">1</td>
-                    <td>Rodrigo Albano Hofer Bastos</td>
-                    <td>digoalbano1010@gmail.com</td>
-                    <td>06/12/1996</td>
-                    <td class="telefone">(31) 9 9962-4675</td>
-                </tr>
-                <tr>
-                    <td class="numeros">2</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="telefone"></td>
-                </tr>
-                <tr>
-                    <td class="numeros">3</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="telefone"></td>
-                </tr>
-                <tr>
-                    <td class="numeros">4</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="telefone"></td>
-                </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td class="numeros">1</td>
+                        <td>Rodrigo Albano Hofer Bastos</td>
+                        <td>digoalbano1010@gmail.com</td>
+                        <td>06/12/1996</td>
+                        <td class="telefone">(31) 99962-4675</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </section>
