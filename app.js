@@ -19,6 +19,10 @@ logo.addEventListener('click', home)
 
 
 // Functions
+function home(){
+	location.reload()
+}
+
 function submit(){
 	event.preventDefault();
 	if(registerBirth.value == '' || registerEmail.value == '' || registerName.value == '' || registerPhone.value == ''){
