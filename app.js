@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$("#phone").mask("(99) 99999-9999");
 });
 
-let row = 1;
+let row = 0;
 let register = document.getElementById('cadastrar-btn')
 let registerName = document.getElementById('name')
 let registerEmail = document.getElementById('email')
@@ -12,12 +12,28 @@ let registerPhone = document.getElementById('phone')
 let tabela = document.getElementById('tableBody')
 let logo = document.getElementById('logo')
 let logoTablet = document.getElementById('logo-tablet')
+let hamburgerTablet = document.getElementById('hamburger-tablet')
+let hamburgerMobile = document.getElementById('hamburger-mobile')
+let hamburgerOpen = document.querySelector('.hamburguer-menu')
+let hamburgerLi = document.querySelector('#hamburger-menu-mobile')
+let hamburgerClose = document.querySelector('.hamburguer-open')
+let registerLI = document.querySelector('.registerLI')
+let aboutMeLI = document.querySelector('.aboutMeLI')
+let listLI = document.querySelector('.listLI')
+let tabelaNavigation = document.getElementById('table-navigation')
 
 
 // Event Listeners
 register.addEventListener('click', submit)
 logo.addEventListener('click', home)
 logoTablet.addEventListener('click', home)
+hamburgerMobile.addEventListener('click', openMenu)
+hamburgerTablet.addEventListener('click', openMenu)
+hamburgerClose.addEventListener('click', closeMenu)
+registerLI.addEventListener('click', closeMenu)
+aboutMeLI.addEventListener('click', closeMenu)
+listLI.addEventListener('click', closeMenu)
+btns = addEventListener('click', active)
 
 // Functions
 function home(){
@@ -30,6 +46,7 @@ function submit(){
 		alert('Alguma informaão está faltando, preencha o formulário novamente')
 	} else {
 		createTable()
+		createTableNavigation()
 		clearCadastro()
 	}
 }
@@ -65,4 +82,36 @@ function createTable(){
 		newTr.appendChild(td)
 	}
 	tabela.appendChild(newTr)
+}
+
+function openMenu(){
+	hamburgerOpen.style.display = 'block'
+	hamburgerLi.style.display = 'block'
+}
+
+function closeMenu(){
+	hamburgerOpen.style.display = 'none'
+	hamburgerLi.style.display = 'none'
+}
+
+function createTableNavigation(){
+	const button = document.createElement('button')
+	button.className="btn"
+	
+	const desiredIndex = tabela.children.length - 1
+
+	button.addEventListener('click', () => {
+		const tableRows = [...tabela.children]
+		const numberOfTableRows = tableRows.length
+		
+		for (let i = 0; i < numberOfTableRows; i++) {
+			tableRows[i].style.display = 'none'
+		}
+
+		tableRows[desiredIndex].style.display = ''
+	})
+
+	button.innerHTML = tabela.children.length;
+
+	tabelaNavigation.appendChild(button)
 }
