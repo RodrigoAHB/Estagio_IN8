@@ -29,13 +29,37 @@ html{
     src: url(Fonts/Roboto-Regular_0.ttf);
 }
 
+.tablet{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
+    padding: 5rem 0 5rem 0;
+}
+
+.logo-tablet{
+    width: 17rem;
+    margin-right: 1.5rem;
+}
+
+.logo-tablet:hover{
+    cursor: pointer;
+}
+
+.hamburguer-menu{
+    width: 4.5rem;
+
+}
+
+
+
 .background{
     background-image: url(imagens/index-image.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    height: 97vh;
-    width: 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
 }
 
 header nav ul li{
@@ -51,7 +75,7 @@ header nav ul li a{
     font-size: 1.9rem;
     font-family: 'Roboto-regular';
     margin-right: 1.5rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
 }
 
 .dot{
@@ -60,7 +84,7 @@ header nav ul li a{
 
 header nav ul li a:hover{
     cursor: pointer;
-    border-bottom: 1px solid white;
+    border-bottom: 0.1rem solid white;
 }
 
 .container{
@@ -68,9 +92,9 @@ header nav ul li a:hover{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1000px;
+    max-width: 100rem;
     margin: auto;
-    padding: 50px 0 50px 0;
+    padding: 5rem 0 5rem 0;
 }
 
 .logo{
@@ -88,44 +112,43 @@ header nav ul{
 main{
     margin: auto;
     width: 100%;
-    max-width: 1000px;
-    max-height: 527px;
+    max-width: 100rem;
+    max-height: 52.7rem;
     color: white;
     font-family: 'minhaFonte';
-    padding: 150px 0 444px;
+    padding: 15rem 0 44.4rem 0;
 }
 
 main h1{
     font-size: 12rem;
     font-weight: 25;
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
 }
 
 main h2{
-    font-size: 50px;
+    font-size: 5.2rem;
     font-weight: 25;
 }
 
 .cadastro-container{
     background-color: #29abe2;
-    height: 72vh;
-    max-width: 1920px;
+    max-width: 192rem;
     margin: auto;
 }
 
 .cadastro-container h1{
     font-family: 'minhaFonte';
     text-align: center;
-    padding: 80px;
+    padding: 8rem;
     font-size: 5rem;
     color: white;
     font-weight: 25;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
 }
 
 .cadastro{
     font-family: 'Roboto-regular';
-    max-width: 650px;
+    max-width: 65rem;
     margin: auto;
     display: grid;
     font-size: 1.4rem;
@@ -133,17 +156,17 @@ main h2{
 }
 
 .cadastro label{
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 .input{
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 0.1rem solid white;
     background-color: #29aae2;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     color: white;
     font-size: 1.6rem;
-    padding-bottom: 3px;
+    padding-bottom: 0.3rem;
     outline: 0;
 }
 
@@ -155,6 +178,7 @@ main h2{
     text-align: center;
     margin: auto;
     margin-top: 70px;
+    margin-bottom: 100px;
     font-family: 'minhaFonte';
     font-size: 5rem;
     font-weight: 25;
@@ -171,11 +195,11 @@ main h2{
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-bottom: 150px;
+    padding-bottom: 15rem;
     }
 
 .lista-container h1{
-    padding: 30px 0 50px 0;
+    padding: 3rem 0 5rem 0;
     font-size: 5rem;
     font-family: 'minhaFonte';
     font-weight: 25;
@@ -184,6 +208,8 @@ main h2{
 .tabela-container{
     display: flex;
     font-size: 1.8rem;
+    max-width: 110rem;
+    margin: auto;
 }
 
 .tabela{
@@ -247,13 +273,12 @@ footer{
     text-align: center;
     margin: auto;
     background-image: url(imagens/rodape-desktop.jpg);
-    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     font-family: 'Roboto-light';
     font-size: 2rem;
-    height: 25vh;
-    padding-top: 50px;
+    padding: 50px 0 50px 0;
 }
 
 footer p{
@@ -267,10 +292,25 @@ footer p{
     }
 }
 
+@media (max-width:1280px){
+    html{
+        font-size: 42%;
+    }
+    main{
+        padding: 20rem 0 40rem;
+    }
+}
+
 @media (max-width: 1100px){
     .topo-icon{
         width: 3rem;
         right: 20px;
+    }
+    .container{
+        max-width: 80rem;
+    }
+    main{
+        max-width: 80rem;
     }
 }
 
@@ -285,4 +325,22 @@ footer p{
         font-size: 40%;
     }
 
+}
+
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 37%;
+    }
+    .tablet{
+        display: flex;
+    }
+    .container{
+        display: none;
+    }
+    .cadastrar-btn{
+        width: 65%;
+    }
+    footer{
+        max-width: 768px;
+    }
 }

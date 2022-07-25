@@ -11,11 +11,13 @@ let registerBirth =	document.getElementById('birthdate')
 let registerPhone = document.getElementById('phone')
 let tabela = document.getElementById('tableBody')
 let logo = document.getElementById('logo')
+let logoTablet = document.getElementById('logo-tablet')
 
 
 // Event Listeners
 register.addEventListener('click', submit)
 logo.addEventListener('click', home)
+logoTablet.addEventListener('click', home)
 
 
 // Functions
