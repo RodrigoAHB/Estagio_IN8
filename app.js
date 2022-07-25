@@ -12,13 +12,14 @@ let registerPhone = document.getElementById('phone')
 let tabela = document.getElementById('tableBody')
 let logo = document.getElementById('logo')
 let logoTablet = document.getElementById('logo-tablet')
+let hamburger = document.getElementById('hamburger-menu')
 
 
 // Event Listeners
 register.addEventListener('click', submit)
 logo.addEventListener('click', home)
 logoTablet.addEventListener('click', home)
-
+hamburger.addEventListener('click', openMenu)
 
 // Functions
 function home(){
@@ -68,3 +69,6 @@ function createTable(){
 	tabela.appendChild(newTr)
 }
 
+function openMenu(){
+	
+}
