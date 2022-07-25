@@ -48,9 +48,8 @@ html{
     cursor: pointer;
 }
 
-.hamburguer-menu{
+.hamburguer{
     width: 4.5rem;
-
 }
 
 .mobile{
@@ -61,6 +60,28 @@ html{
     margin: auto;
     padding: 5rem 0 8rem 0;
     max-width: 100rem;
+}
+
+.hamburguer-menu{
+    /* display: none; */
+    position: absolute;
+    list-style: none;
+    width: 30rem;
+    top: 10vh;
+    left: 88px;
+    background-color: #29aae2;
+}
+
+.hamburguer-menu li{
+    padding-bottom: 5rem;
+}
+
+.hamburguer-menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Roboto-light';
+    letter-spacing: 0.1rem;
 }
 
 .background{
@@ -341,13 +362,6 @@ footer p{
     }
 }
 
-@media (max-width: 768px){
-    html{
-        font-size: 40%;
-    }
-
-}
-
 @media only screen and (max-width: 768px){
     html{
         font-size: 37%;
@@ -372,6 +386,9 @@ footer p{
     .cadastrar-btn{
         font-size: 5rem;
     }
+    /* .hamburguer-menu{
+        position: absolute;
+    } */
 }
 
 @media only screen and (max-width: 656px){
@@ -423,6 +440,11 @@ footer p{
     .cadastrar-btn{
         width: 80%;
         font-size: 8rem;
+    }
+    .lista-container h1{
+        font-size: 8rem;
+        max-width: 50%;
+        margin: auto;
     }
     footer{
         text-align: center;
