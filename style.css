@@ -301,10 +301,24 @@ footer p{
 
 @media (max-width:1280px){
     html{
-        font-size: 42%;
+        font-size: 45%;
     }
     main{
         padding: 20rem 0 40rem;
+    }
+    .cadastro{
+        font-size: 2rem;
+        max-width: 70rem;
+    }
+    .cadastro label{
+        width: 100%;
+        margin: auto;
+    }
+    .input{
+        margin: auto;
+        width: 100%;
+        font-size: 2rem;
+        padding-bottom: 0.7rem;
     }
 }
 
@@ -422,23 +436,3 @@ footer p{
         padding: 5rem 0 5rem 0;
     }
 }
-
-/* main{
-    margin: auto;
-    width: 100%;
-    max-width: 100rem;
-    max-height: 52.7rem;
-    color: white;
-    font-family: 'minhaFonte';
-    padding: 15rem 0 44.4rem 0;
-}
-
-main h1{
-    font-size: 12rem;
-    font-weight: 25;
-    padding-bottom: 1.5rem;
-}
-
-main h2{
-    font-size: 5.2rem;
-    font-weight: 25; */
