@@ -20,7 +20,7 @@ let hamburgerClose = document.querySelector('.hamburguer-open')
 let registerLI = document.querySelector('.registerLI')
 let aboutMeLI = document.querySelector('.aboutMeLI')
 let listLI = document.querySelector('.listLI')
-let tabelaNavigation = document.getElementById('table-navigation')
+// let tabelaNavigation = document.getElementById('table-navigation')
 
 
 // Event Listeners
@@ -33,7 +33,6 @@ hamburgerClose.addEventListener('click', closeMenu)
 registerLI.addEventListener('click', closeMenu)
 aboutMeLI.addEventListener('click', closeMenu)
 listLI.addEventListener('click', closeMenu)
-btns = addEventListener('click', active)
 
 // Functions
 function home(){
@@ -46,7 +45,7 @@ function submit(){
 		alert('Alguma informaão está faltando, preencha o formulário novamente')
 	} else {
 		createTable()
-		createTableNavigation()
+		// createTableNavigation()
 		clearCadastro()
 	}
 }
@@ -94,24 +93,27 @@ function closeMenu(){
 	hamburgerLi.style.display = 'none'
 }
 
-function createTableNavigation(){
-	const button = document.createElement('button')
-	button.className="btn"
+// function createTableNavigation(){
+// 	const button = document.createElement('button')
+// 	button.className="btn"
 	
-	const desiredIndex = tabela.children.length - 1
+// 	const desiredIndex = tabela.children.length - 1
 
-	button.addEventListener('click', () => {
-		const tableRows = [...tabela.children]
-		const numberOfTableRows = tableRows.length
+// 	button.addEventListener('click', () => {
+// 		const tableRows = [...tabela.children]
+// 		const numberOfTableRows = tableRows.length
 		
-		for (let i = 0; i < numberOfTableRows; i++) {
-			tableRows[i].style.display = 'none'
-		}
+// 		for (let i = 0; i < numberOfTableRows; i++) {
+// 			tableRows[i].style.display = 'none'
+// 		}
 
-		tableRows[desiredIndex].style.display = ''
-	})
+// 		tableRows[desiredIndex].style.display = ''
+// 	})
 
-	button.innerHTML = tabela.children.length;
+// 	button.innerHTML = tabela.children.length;
 
-	tabelaNavigation.appendChild(button)
-}
+// 	tabelaNavigation.appendChild(button)
+// }
+
+
+// Comecei o processo de adaptar a lista de cadastros para mobile, mas não foi possível terminar devido ao tempo e a compromissos que tive durante o período, agradeço a oportunidade e espero poder trabalahr com vocês para poder evoluir minhas habilidades e ajudar o time no que for preciso!
